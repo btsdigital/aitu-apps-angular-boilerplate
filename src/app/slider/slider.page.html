@@ -1,0 +1,49 @@
+<ion-content>
+  <ion-slides
+    #sliderContainer
+    class="slides"
+    pager="true"
+    [options]="slideOpts"
+  >
+    <ion-slide>
+      <app-slider-content
+        (clickButton)="swipeNext()"
+        imageSrc="/assets/slide1.png"
+        [title]="'Привет, '+ (name | async) + 'Мини-приложения в Aitu'"
+        description="Расскажем, что это и как использовать aitu.apps для своего
+      бизнеса"
+        buttonLabel="Я готов!"
+      ></app-slider-content>
+    </ion-slide>
+    <ion-slide>
+      <app-slider-content
+        (clickButton)="swipeNext()"
+        imageSrc="/assets/slide2.png"
+        title="+800.000 пользователей Aitu"
+        description="Могут увидеть ваше мини-приложение и стать его
+              пользователями"
+        buttonLabel="Интересно"
+      ></app-slider-content>
+    </ion-slide>
+    <ion-slide>
+      <app-slider-content
+        (clickButton)="swipeNext()"
+        imageSrc="/assets/slide3.png"
+        title="Всегда под рукой"
+        description="Каталог с мини-приложениями находится на центральной вкладке.
+              Пользователи легко его найдут"
+        buttonLabel="Что ещё?"
+      ></app-slider-content>
+    </ion-slide>
+    <ion-slide>
+      <app-slider-content
+        (clickButton)="swipeNext()"
+        imageSrc="/assets/slide4.png"
+        title="Баннер с вашим предложением"
+        description="Уникальная скидка, спецпредложение или акция. Донесите ценное
+              предложение до всех пользователей Aitu"
+        buttonLabel="Далее"
+      ></app-slider-content>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

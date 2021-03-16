@@ -1,0 +1,19 @@
+:host {
+  height: 100%;
+}
+.slide-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.slide-block {
+  height: 100%;
+  padding: 0 16px;
+  text-align: left;
+}
+
+.slide-button {
+  padding: 0 16px;
+}

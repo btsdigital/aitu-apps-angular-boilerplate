@@ -1,0 +1,16 @@
+<div class="slide-content">
+  <img [src]="imageSrc" />
+  <div class="slide-block">
+    <ion-text color="dark">
+      <h2>{{title}}</h2>
+    </ion-text>
+    <ion-text
+    ><sub
+    >{{description}}</sub
+    ></ion-text
+    >
+  </div>
+  <div class="slide-button">
+    <ion-button (click)="swipeNext()" expand="full">{{buttonLabel}}</ion-button>
+  </div>
+</div>
